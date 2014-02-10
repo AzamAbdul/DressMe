@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/AbsoluteLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:fadingEdge="vertical" >
+   	>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fadingEdge="horizontal"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/TextView01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:includeFontPadding="false"
+            android:text="Dress Me!"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF"
+            android:textColorLink="#FFFFFF"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/Welcome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:includeFontPadding="false"
+            android:text="Dress me uses weather and location data to give you clothing that tailors to your needs"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF"
+            android:textColorLink="#FFFFFF"
+            android:textSize="10dp"
+            android:textStyle="bold|normal" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button1"
+        style="android:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="73dp"
+        android:layout_y="331dp"
+        android:onClick="getWeather"
+        android:padding="15dp"
+        android:text="@string/getWeatherData"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:textColorLink="#FFFF"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="286dp"
+        android:layout_height="85dp"
+        android:layout_x="18dp"
+        android:layout_y="186dp"
+        android:src="@drawable/snowwy" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="106dp"
+        android:layout_height="102dp"
+        android:layout_x="205dp"
+        android:layout_y="77dp"
+        android:src="@drawable/rainy" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="100dp"
+        android:layout_height="96dp"
+        android:layout_x="20dp"
+        android:layout_y="78dp"
+        android:src="@drawable/sun" />
+
+</AbsoluteLayout>
